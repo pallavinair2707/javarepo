@@ -1,0 +1,18 @@
+package ExcelRead;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+public class ExcelMain {
+
+    public static void main(String[] args) throws FileNotFoundException, IOException {
+
+        // Read String data
+        String name = ExcelCode.readStringData(1, 0);
+        System.out.println("Name: " + name);
+
+        // Read Integer data
+        String value = ExcelCode.readIntegerData(1, 1);
+        System.out.println("Value: " + value);
+    }
+}
